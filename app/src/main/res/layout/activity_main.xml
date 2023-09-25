@@ -88,4 +88,21 @@
         android:text="Register Here"
         android:textColor="#F3EDED" />
 
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_gravity="right"
+  android:layout_marginLeft="210dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000"
+        android:text="Forget password?" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lê Hoài Thảo - 21115053120146"
+        android:textColor="#F4F0F0" />
+
 </RelativeLayout>
