@@ -7,25 +7,54 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/ImageView"
         android:layout_width="101dp"
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="164dp"
         app:srcCompat="@drawable/logo" />
-
+    <EditText
+        android:id="@+id/editTextText1"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/ImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        android:textColor="#F6F1F1"
+        android:textColorHint="#EDE5E5"
+        android:textSize="17sp"
+      />
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/editTextText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        android:textColor="#F6F1F1"
+        android:textColorHint="#EDE5E5"
+        android:textSize="17sp" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="274dp"
         android:layout_height="41dp"
-        android:layout_below="@+id/ImageView"
+        android:layout_below="@+id/editTextText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="25dp"
         android:background="#11000000"
-        android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
@@ -40,9 +69,8 @@
         android:layout_below="@id/editTextText"
         android:layout_alignStart="@id/editTextText"
         android:layout_alignLeft="@id/editTextText"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:background="#11000000"
-        android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -71,29 +99,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Login"
+                android:text="Sign up"
                 android:textColor="#fff"
                 android:textSize="18dp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textView3"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp"
-        android:text="Register Here"
-        android:textColor="#F3EDED" />
 
     <Button
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextTextPassword"
         android:layout_gravity="right"
-  android:layout_marginLeft="210dp"
+        android:layout_marginLeft="210dp"
         android:layout_marginBottom="5dp"
         android:background="#00000000"
         android:text="Forget password?" />
@@ -104,5 +121,48 @@
         android:layout_height="wrap_content"
         android:text="Lê Hoài Thảo - 21115053120146"
         android:textColor="#F4F0F0" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree with confirms and conditions"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or signup with"
+        android:layout_below="@id/checkBox"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="160dp"
+        android:textSize="14dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="207dp"
+        android:background="transparent"
+        android:scrollbarSize="100dp"
+        app:srcCompat="@drawable/ic_fb" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/ic_gg"
+        android:layout_below="@id/editTextTextPassword"
+        android:background="transparent"
+        android:layout_marginTop="208dp"
+        android:layout_marginLeft="180dp"/>
 
 </RelativeLayout>
